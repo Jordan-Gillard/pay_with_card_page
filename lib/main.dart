@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:pay_with_card_page/card_page.dart';
+import 'package:pay_with_card_page/constants.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(CheckOutPage());
 }
 
-class MyApp extends StatelessWidget {
+class CheckOutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      color: backgroundWhite,
+      home: CardPage(),
+    );
   }
 }
